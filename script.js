@@ -57,7 +57,7 @@ showExpensesButton.addEventListener('click', function() {
     const month = document.getElementById('month').value.trim();
 
     if (!month) {
-        modal.style.display = 'flex'; // Show the modal
+        modal.style.display = 'flex'; 
         return;
     }
 
@@ -80,8 +80,6 @@ showExpensesButton.addEventListener('click', function() {
 closeButton.addEventListener('click', function() {
     modal.style.display = 'none'; // Hide the modal
 });
-
-// Optional: Close modal when clicking outside of it
 window.addEventListener('click', function(event) {
     if (event.target === modal) {
         modal.style.display = 'none';
