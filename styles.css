@@ -1,0 +1,108 @@
+{
+    box-sizzing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    margin: 100px auto;;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-button {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #36af52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #176929;
+}
+
+#expense-list {
+    margin-top: 20px; 
+}
+
+#expense-list h2 {
+    margin-bottom: 10px; 
+}
+
+#expense-list p {
+    margin: 5px 0;
+}
+
+#expense-list h3 {
+    margin-top: 10px; 
+    font-weight: bold; 
+}
+
+
+button.clear {
+    background-color: #fc3030;
+    margin-top: 20px; 
+}
+
+button.clear:hover {
+    background-color: #ac0000; 
+}
